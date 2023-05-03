@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body class="font-sans max-[687px]:text-sm bg-slate-50 flex justify-center flex-col">
+    <nav
+      class="fixed z-50 top-0 left-0 right-0 p-5 md:flex md:items-center md:justify-between transition-all ease-in duration-300"
+    >
+      <div class="flex justify-between items-center ">
+        <div class="flex text-lg cursor-pointer">
+          <div class="ml-3">
+            <span class="font-bold">PSB ASLIMU</span><br />
+            <div class="text-sm top-10">
+              Pesantren As-Sakienah Li Mubtadi'in
+            </div>
+          </div>
+        </div>
+
+        <span class="text-3xl cursor-pointer mx-2 min-[920px]:hidden block">
+          <ion-icon name="menu" class="z-30" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center md:z-auto md:static absolute bg-slate-50 w-full left-0 min-[910px]:w-auto min-[910px]:py-0 py-4 min-[910px]:pl-0 pl-7 min-[910px]:opacity-100 opacity-80 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#beranda" class="text-sm hover:text-cyan-500 duration-500"
+            >BERANDA</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#profil" class="text-sm hover:text-cyan-500 duration-500"
+            >PROFIL</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#persyaratan" class="text-sm hover:text-cyan-500 duration-500"
+            >PERSYARATAN</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#biaya" class="text-sm hover:text-cyan-500 duration-500">BIAYA</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#kontak" class="text-sm hover:text-cyan-500 duration-500"
+            >KONTAK</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- beranda -->
+    <div class=" bg-slate-100 flex flex-col justify-center items-center -z-50 bottom-3.5 pt-28 " id="beranda">
+      <img src="./assets/logo aslimu.jpeg" alt="logo" class="max-[678px]:h-40 h-52 p-3 bg-white border-solid rounded-lg mt-10 ">
+      <span class="max-[678px]:text-xl text-2xl text-center font-bold mt-4"
+        >PENERIMAAN SANTRI BARU <br /></span
+        ><span class="max-[678px]:text-xl text-2xl text-center font-bold">
+          PESANTREN ASLIMU <br />
+          AS-SAKIENAH LIMUBTADI'IN
+        </span>
+        <div class="sticky top-10 mt-10 max-[920px]:flex max-[920px]:flex-col ">
+          <a href="https://bit.ly/3ILhQ6Y" class="bg-cyan-500 rounded-full p-3 m-2 text-lg font-bold hover:opacity-50 text-center">Daftar sekarang</a>
+          <span class="text-sm text-center font-bold">atau</span>
+          <a href="https://wa.link/ckmho3" class="bg-cyan-500 rounded-full p-3 m-2 text-lg font-bold hover:opacity-50 text-center">Hubungi Admin</a>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="mt-[-16]"><path fill="#a5f3fc" fill-opacity="1" d="M0,96L48,133.3C96,171,192,245,288,245.3C384,245,480,171,576,128C672,85,768,75,864,90.7C960,107,1056,149,1152,144C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+      </div>
+    
+    <!-- AWAL Pendaftaran -->
+    
+  <div class="bg-cyan-200 pt-16">
+    <h1 class="text-2xl text-center font-bold pt-28" id="persyaratan">--PENDAFTARAN--</h1>
+    <div
+      class="persyaratan md:max-xl:flex md:max-2xl:flex md:max-xl:w-4/6 md:max-xl:m-auto md:max-xl:justify-evenly md:max-2xl:justify-evenly md:max-2xl:w-4/6 md:max-2xl:m-auto md:max-2xl:flex-wrap"
+    >
+      <div
+        class="text-center md:m-auto md:w-4/6 bg-white p-2 m-3 shadow rounded-md""
+      >
+        <h1 class="text-xl font-bold">SYARAT PENDAFTARAN</h1>
+        <ul class="text-left pl-5 p-1 list-disc">
+          <li>melakukan pendaftaran melalui WA, link pendaftaran atau langsung datang ke Sekretariat Pendaftaran pesantren ASLIMU</li>
+          <li>membayar Administrasi Pendaftaran</li>
+          <li>melakukan daftar ulang degan membayar administrasi daftar ulang minimal 50% </li>
+          <li>Photo Copy Kartu Keluarga (KK)</li>
+          <li>Photo Copy Kartu Akte Kelahiran</li>
+          <li>Photo Copy KTP kedua orang tua/wali</li>
+          <li>Photo Copy Raport, Surat pindah (bagi Pindahan)</li>
+          <li>Ijazah/surat keterangan Lulus (Untuk SMP & SMK)</li>
+        </ul>
+        
+      </div>
+     
+    </div>
+
+    <!-- biaya -->
+    <div
+    class="persyaratan md:max-xl:flex md:max-2xl:flex md:max-xl:w-4/6 md:max-xl:m-auto md:max-xl:justify-evenly md:max-2xl:justify-evenly md:max-2xl:w-4/6 md:max-2xl:m-auto md:max-2xl:flex-wrap"
+    >
+    <h1 class="text-xl font-bold text-center pt-8">SYARAT PENDAFTARAN</h1>
+      <div
+        class="md:max-xl:w-96 md:max-2xl:w-96 bg-white m-4 rounded drop-shadow-md text-center"
+      >
+        <h1 class="text-xl font-bold">SDIT</h1>
+        <p class="text-left m-3 p-3">
+          Rincian biaya pendaftaran SDIT
+          <table class="min-w-full text-left m-8 my-5">
+            <tr>
+              <td class="w-2/3">- Pendaftaran:</td> <td class=" pr-16 text-right"> 200.000</td>
+            </tr>
+            <tr>
+              <td>- Bangunan Asrama:</td> <td class=" pr-16 text-right"> 2.000.000</td>
+            </tr>
+            <tr>
+              <td>- Meja Kursi:</td> <td class=" pr-16 text-right"> 500.000</td>
+            </tr>
+            <tr>
+              <td >- Lemari, Kasur, Ranjang</td> <td class=" pr-16 text-right"> 1.850.000</td>
+            </tr>
+            <tr>
+              <td>- seprai</td> <td class=" pr-16 text-right"> 70.000</td>
+            </tr>
+            <tr>
+              <td>- Buku Paket</td> <td class=" pr-16 text-right"> 500.000</td>
+            </tr>
+            <tr>
+              <td>- Sampul Rapot</td > <td class=" pr-16 text-right"> 50.000</td>
+            </tr>
+            <tr>
+              <td>- seragam</td> <td class=" pr-16 text-right "> 550.000</td>
+            </tr>
+
+            <tr> <td><span class="font-bold">TOTAL: <td class=" pr-16 text-right font-bold">5.720.000</td>  </span></tr>
+            
+          </table>
+  <br>
+        </p>
+      </div>
+      <div
+        class=" md:max-xl:w-96 md:max-2xl:w-96 bg-white text-center m-4 rounded drop-shadow-md"
+      >
+        <h1 class="text-xl font-bold">SMP & SMK</h1>
+        <p class="text-left m-3 p-3">
+          Rincian biaya Pendaftaran SMP dan SMK 
+          <table class="min-w-full text-left m-8 my-5">
+            <tr>
+              <td class="w-2/3">-pendaftaran: </td><td class=" pr-16 text-right ">200.000</td>
+            </tr>
+            <tr>
+              <td>-sumbangan Pembangunan: </td><td class=" pr-16 text-right ">1.000.000</td>
+            </tr>
+            <tr>
+              <td>-Lemari, kasur: </td><td class=" pr-16 text-right ">1.150.000</td>
+            </tr>
+            <tr>
+              <td>-Seragam Pesantren: </td><td class=" pr-16 text-right ">150.000</td>
+            </tr>
+            <tr>
+              <span><tr><td class="font-bold">TOTAL</td><td class=" pr-16 text-right font-bold">2.500.000</td></tr></span>
+            </tr>
+          </table>
+
+          <table class="text-left m-5">
+            <tr>
+              <td>*khusus SMP & SMK </td>
+            </tr>
+            <tr>
+              <td>Beasiswa Prestasi untuk juara 1,2,3 (juara kelas) tahun terakhir,
+                juara 1,2,3 lomba minimal tingkat kecamatan.</td>
+            </tr>
+          </table>
+          <br>
+        </p>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="mt-16"><path fill="#f8fafc" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,240C384,277,480,267,576,234.7C672,203,768,149,864,128C960,107,1056,117,1152,149.3C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>    
+    </div>
+
+      
+  </div>
+  
+
+    <!-- AKHIR PROFIL -->
+
+    <!-- persyaratan -->
+   
+    <div>
+      <h1 class="text-2xl text-center font-bold pt-28" id="profil">--PROFIL--</h1>
+    <div class="card-selayangPandang cursor-pointer text-center md:m-auto md:w-4/6 bg-white p-2 m-3 shadow rounded-md" >
+      <span class="font-bold text-xl">Selayang pandang</span></span>  <br>
+      <p class="text-selayangPandang hidden"> 
+        Pondok pesantren As-Sakienah Li mubtadiin Atau Lebih dikenal ALIMU adalah lembaga pendidikan pondok pesantren dibawah naungan Yayasan Islam Ar-Rahiyah PM. As-Sakienah </br></br>
+        ASLIMU merupakan pelebaran dari sayap dari persantren induk yaitu PESATREN MODERN AS-SAKIENAH yang pada mulayany dikhususkan utuk santri junior atau santri yang masih Sekolah Dasar. </br>
+        Tahun 2017 ASLIMU masih dikenal dengan sebutan SDIT BERASRAMA dan masih derada didalam satu lingkunan dengan pesantren induk, bahkan kamranya pun masih bergabung bersama anak-anak tingkat MTs dan MA (Santri As-Sakienah). </br></br>
+        Pada tahun 2018 berdasarkan usulan dari pengasuh SDIT BERSAMA, yangkemudian disetujui oleh Direktur TMI pada masa itu Ust. Sumarso Zuhri, santri junior menepati suatu rumah khusus yang bertujuan untuk memudahkan proses pendidikan dan pembimbingannya. Walaupun pada tahun 2019, dikarenakan minat masyarakat cukup tinggi, akhirnya rumah terssebut sudah tidak menampung lagi, kemudian santri junior bergeser ke sebuah lingkungan baru diluar pesantren walaupun terbilang masih dekat dengan pesantren. </br></br>
+        Pada tahun 2021 setelah idul fitri, pengasuh SDIT BERASRAMA sowan dan silaturahmi ke pembina yayasan K.H sunarto Rois dan berbincang seputar pendidikan dan pesantren, salah satunya tentang pencapaian SDIT BERASRAMA tiga tahun kebelakang, menurut beliau SDIT BERASRAMA ini begitu sangat pesat perkembangannya hal it bisa dilihat dari jumlah santri yang masuk dari tahun ke tahun, padatahun 2017 terhitung hanya beberapa santri saja, kemuian pada 2018 sampai tahun 2020 mengalami kenaikan menjadi puluhan santri, hal ini perlu disikapi secara serius agar mutu dan kualitas pendidikan tetap terjamin. </br></br> 
+        Pada akhirnya di tahun 2021, pengasuh SDIT BERASRAMA besrta pengurus yayasan dan pimpina Pesanten Modern As-Sakienah, sepakat bahwa perlu ada tempat khusus yang memungkinkan SDIT BERASRAMA bisa berkembang , maka pada tanggal 21 juli 2021 SDIT BERASRAMA membuka lokasi baru yaitu di blok Nyi Lapda Desa Tugu Kecamatan Sliyeg Kabupaten indramayu sekitar lima ratus meter dari peasntren induk </br></br>
+        Setelah berjalanatu tahu lamanyaa, dalam sebuah pertemuan khusus para unit pendidikan termasuk didalamnya pembina yayasan, ketua yayasan, Kepala SDIT, Kepala MA, Direktur TMI, pengasuh SDIT BERSAMA semua sepakat perlu dibentuknya nama pesantren untuk legalitas, terkhusus Izin Operational Pesanten (IJOP) maka munculah nama As-sakienah Limubtadiin (ASLIMU) </br></br>
+        Kini ASLIMU menyediakan pendidikan formal selain SD, ada juga SMP dan SMK dengan pola manajemen terpadu menyuguhkan pendidikan Al.Qur'an (Tahfidz dan Tahsin) dengan metode YANBUA Qudus. pendidikan Bahasa (Arab dan Inggris) dengan model Pesantren Modern dan menjadikan Kitab Kuning sebagai pokok kajian dan referensi dalam pembelajaran Aqidah, Akhiak dan Fiqih. </br></br>
+        </p>
+    </div>
+    
+      <div class="visi-misi text-center">
+        <div class="card-visi cursor-pointer text-center md:m-auto md:w-4/6 bg-white p-2 m-3 shadow rounded-md transition-all ease-in duration-500"
+        >
+          <span class="font-bold text-2xl">visi</span>
+          <p class="text-visi hidden">Mencetak generasi muda yang Qur'ani, mandiri, produktif
+            inovatif dan kompetitif, memiliki pemahaman keagamaan
+            yang kokoh serta wawasan kebangsaan yang luas
+            </p>
+        </div>
+        <div class="card-misi cursor-pointer text-center md:m-auto md:w-4/6 bg-white p-2 m-3 shadow rounded-md">
+          <span class="font-bold text-xl">Misi</span>
+          <ul class="text-misi hidden text-left list-disc pl-4">
+            <li>Menyelenggarakan pendidikan keagamaan, kebangsaan dan
+              umum serta melakukan pembimbingan secara intensif
+              </li>
+            <li>Menanamkan pengetahuan serta kemampuan dasar dalam
+              beribadah dan bersosial
+              </li>
+            <li>Menanamkan sikap disjplin, bertanggungjawab, toleransi dan
+              Empati
+              </li>
+            <li>Menggali dan mengembangkan potensi, minat serta bakat</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card-prodik cursor-pointer text-center md:m-auto md:w-4/6 bg-white p-2 m-3 shadow rounded-md">
+        <span class=" font-bold text-xl">Program Pendidikan</span>
+          <ul class="text-prodik hidden text-left list-disc pl-4">
+            <li class="ml-2">
+              Al-qur'an (Tahfidz & Tahsin)
+            </li>
+            <li class="ml-2">Bahasa (Arab & inggis)</li>
+            <li class="ml-2">kitabutturos (Kitab Kuning)</li>
+            <li class="ml-2">Attitude (AKhlaq & etika sopan santun</li>
+            <li class="ml-2">Sekolah Formal SD, SMP, SMK</li>
+          </ul>
+      </div>
+ 
+
+
+      <!-- last -->
+      
+    
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="kontak"><path fill="#06b6d4" fill-opacity="1" d="M0,256L40,245.3C80,235,160,213,240,208C320,203,400,213,480,224C560,235,640,245,720,234.7C800,224,880,192,960,170.7C1040,149,1120,139,1200,138.7C1280,139,1360,149,1400,154.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+
+    <div class="bg-cyan-500 p-4 pt-4">
+      <span class="font-bold text-2xl">PESANTREN ASLIMU</span><br>
+      <span class="font-semibold">Gg. Nyilapda  Tugu Kec. Sliyeg Kabupaten Indramayu Jawa Barat 45281</span><br><br><br>
+      <h1 class=" text-2xl font-bold">KONTAK INFORMASI</h1> <br>
+      <!-- nomer Admin Aslimu  -->
+      <span class="font-bold">Admin Aslimu</span><br>
+      <a href="https://wa.link/ckmho3"class="hover:font-bold hover:text-cyan-900">+62 812-2238-9991</a> <br>
+      <!-- nomer nurus -->
+      <span class="font-bold">Panitia PSB</span><br>
+      <a href="https://wa.link/ud6tty"class="hover:font-bold hover:text-cyan-900">+62 831-8043-8905</a> <br>
+      <!-- kang irfan -->
+      <span class="font-bold">ADM Keuangan Aslimu</span><br>
+      <a href="https://wa.link/gdiw93"class="hover:font-bold hover:text-cyan-900">+62 812-2238-9992</a> <br>
+      <br><br>
+      <h2 class="text-xl font-bold"> 
+        follow us:
+      </h2>
+      <a href="https://www.youtube.com/@pesantrenaslimu215">
+        <i class="fa-brands fa-youtube fa-2xl"></i>  
+      </a>
+      <a href="https://ne-np.facebook.com/people/Pesantren-Aslimu/100082979942313/">
+        <i class="fa-brands fa-facebook fa-2xl"></i>  
+      </a>
+      <a href="https://www.tiktok.com/@pesantren_aslimu?lang=id-ID">
+        <i class="fa-brands fa-tiktok fa-2xl"></i>  
+      </a>
+      <a href="https://www.instagram.com/pesantren_aslimu/?hl=id">
+        <i class="fa-brands fa-instagram fa-2xl"></i>  
+      </a>
+      <br><br>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.752038860522!2d108.36108321591001!3d-6.42589555191314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ec153a5808a95%3A0xebcb49b9db06cab2!2sPesantren%20ASLIMU!5e0!3m2!1sid!2sid!4v1678135206748!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <br><br><br>
+    </div>
+  </div>
+    <script src="script.js">
+      
+    </script>
+  </body>
+</html>
